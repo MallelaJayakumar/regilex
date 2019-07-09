@@ -1,0 +1,25 @@
+## Requirements
+- Python 3.6
+- Django (2.1.14)
+- Django REST Framework
+
+## Installation
+```
+	pip install django
+	pip install djangorestframework
+```
+
+## Structure
+In a RESTful API, endpoints (URLs) define the structure of the API and how end users access data from our application using the HTTP methods - GET, POST, PUT, DELETE. Endpoints should be logically organized around _collections_ and _elements_, both of which are resources.
+
+In our case, we have one single resource exposed , `task`, so we will use the following URLS - `/task/` and `/task/<id>` for collections and elements, respectively.
+
+in ""/admin/" , you can manage 'task'.
+
+You can access each model details, using below links.
+
+ "all task"       : "http://127.0.0.1:8000/task/"
+ "task by id"     : "http://127.0.0.1:8000/task/<id>"
+ "Edit task"      : "http://127.0.0.1:8000/edittask/<id>"    (PUT method)
+ "Delete task"    : "http://127.0.0.1:8000/deletetask/<id>"    (DELETE method)
+ "Create task"    : "http://127.0.0.1:8000/create_task/"  (POST method) (send data json format or fill form)
